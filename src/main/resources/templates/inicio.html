@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+    <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>noticia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Pagina de administracion de noticias</h2><br>
+     <p th:if="${session.usuariosession!=null}"  th:text="'¡Hola!'+${session.usuariosession.nombreUsuario}"></p>
+      <img class="logo" name="nombreUsuario" th:src="@{/imagen/perfil/__${session.usuariosession.id}__}" alt="img logo">     
+     <br>
+      <a align="center" th:href="@{/noticia/registrar}">crear a Noticia</a>
+    <br>
+        <a align="center" th:href="@{/noticia/listar}">ir a Lista de Noticia</a>
+        <br>
+        <a  align="center"  th:href="@{/seguridad/perfil}">Editar Perfil</a>
+        <br>
+         <a align="center" th:href="@{/logout}">Salir</a>
+    </body>
+</html>
+

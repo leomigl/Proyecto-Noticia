@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "titulo\"": {
+            "context": "form"
+        },
+        "cuerpo\"": {
+            "context": "form"
+        }
+    }
+}

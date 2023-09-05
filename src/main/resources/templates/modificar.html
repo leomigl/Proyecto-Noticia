@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>noticia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form th:action="@{/noticia/modificar/__${noticia.id}__}" method="post">
+        <input hidden th:value="${noticia.id}" name="id"
+        <label>Titulo</label><br> 
+       <input type="text" name="titulo" th:value="${noticia.titulo}"><br>
+        <label>Escriba la noticia</label><br>
+        <textarea name="cuerpo" rows="25" cols="40" th:value="${noticia.cuerpo}"></textarea>
+        <button type="submit" class="btn btn-primary mt-3 botones">Actualizar</button><br>
+        <a href="http://127.0.0.1:5500/templates/Index.html"><button type="submit">Volver</button></a>
+        <div th:if="${error !=null}">
+            <div class="card-body">
+                <h5 class="card-title" >Error</h5>
+                <p class="card-text" th:text="${error}"></p>
+            </div>
+            </div>
+        <div th:if="${exito !=null}">
+            <div class="card-body">
+                <h5 class="card-title">Exito!</h5>
+                <p class="card-text" th:text="${exito}"></p>
+            </div>
+            </div>
+    </form>
+    
+</body>
+
+</html>

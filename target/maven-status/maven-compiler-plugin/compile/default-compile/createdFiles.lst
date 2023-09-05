@@ -1,0 +1,13 @@
+com\Egg\news\controladores\noticiaControlador.class
+com\Egg\news\repositorios\NoticiaRepositorio.class
+com\Egg\news\servicios\NoticiaServicio.class
+com\Egg\news\entidades\Usuario.class
+com\Egg\news\controladores\noticiaControlador1.class
+com\Egg\news\controladores\AdminControlador.class
+com\Egg\news\controladores\NoticiaControlador2.class
+com\Egg\news\Enumeraciones\Rol.class
+com\Egg\news\seguridadWeb.class
+com\Egg\news\MiExcepciones\MisExcepciones.class
+com\Egg\news\repositorios\UsuarioRepositorio.class
+com\Egg\news\entidades\noticia.class
+com\Egg\news\NoticiaApplication.class
